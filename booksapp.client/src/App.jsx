@@ -11,18 +11,29 @@ function App() {
     const [activeSearchQuery, setActiveSearchQuery] = useState("")
 
     useEffect(() => {
-        setIsLoading(true)
-        fetch('/api/books')
-            .then((res) => res.json())
-            .then((data) => {
-                setBooks(data)
-                setDisplayedBooks(data)
-                setIsLoading(false)
-            }).
-            catch((err) => {
+        const fetchBooks = async () => {
+            setIsLoading(true)
+
+            try {
+                const response = await fetch('/api/books')
+                if (!response.ok) {
+                    throw new Error("Couldnt fetch data")
+                }
+
+            const data = await response.json()
+
+            setBooks(data)
+            setDisplayedBooks(data)
+            }
+            catch (err) {
                 console.error("Fetch error: ", err)
+            }
+            finally {
                 setIsLoading(false)
-            })
+            }
+        }
+
+        fetchBooks()
     }, [])
 
     const searchBooks = () => {
