@@ -15,45 +15,47 @@ Make sure you have the following installed on your machine:
 
 
 ## Project Structure
+```
 BooksApp/
-├── BooksApp.Client/    # React Frontend
-│   ├── .vscode/
-│   │   └── settings.json
-│   ├── Components/
-│   │   └── TextHighlight.jsx    # Component that highlights the searched text
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── App.css    # Main component style 
-│   │   ├── App.jsx    # Main component
-│   │   ├── index.css    # Used to reset the styles
-│   │   └── main.jsx
-│   ├── Styles/
-│   ├── .gitignore
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package.json
-│   ├── README.md
-│   └── vite.config.js
-└── BooksApp.Server/    # .Net Backend
-    ├── Connected Services/
-    ├── Dependencies/
-    ├── Properties/
-    │   └── launchSettings.json
-    ├── Controllers/
-    │   └── BooksController.cs    # Controller for the api endpoint
-    ├── Data/    # The provided data
-    │   ├── books.csv
-    │   └── books.json
-    ├── Models/    # Models used to merge the data
-    │   ├── CSVData.cs
-    │   ├── JsonData.cs
-    │   └── MergedData.cs
-    ├── Services/    # Service used to load and merge the data
-    │   └── DataMergeService.cs
-    ├── appsettings.json
-    ├── BooksApp.Server.http
-    ├── CHANGELOG.md
-    └── Program.cs
+├── BooksApp.Client/ # React Frontend
+│ ├── .vscode/
+│ │ └── settings.json
+│ ├── Components/
+│ │ └── TextHighlight.jsx # Component that highlights the searched text
+│ ├── public/
+│ ├── src/
+│ │ ├── assets/
+│ │ ├── App.css # Main component style
+│ │ ├── App.jsx # Main component
+│ │ ├── index.css # Used to reset the styles
+│ │ └── main.jsx
+│ ├── Styles/
+│ ├── .gitignore
+│ ├── eslint.config.js
+│ ├── index.html
+│ ├── package.json
+│ ├── README.md
+│ └── vite.config.js
+└── BooksApp.Server/ # .Net Backend
+├── Connected Services/
+├── Dependencies/
+├── Properties/
+│ └── launchSettings.json
+├── Controllers/
+│ └── BooksController.cs # Controller for the api endpoint
+├── Data/ # The provided data
+│ ├── books.csv
+│ └── books.json
+├── Models/ # Models used to merge the data
+│ ├── CSVData.cs
+│ ├── JsonData.cs
+│ └── MergedData.cs
+├── Services/ # Service used to load and merge the data
+│ └── DataMergeService.cs
+├── appsettings.json
+├── BooksApp.Server.http
+├── CHANGELOG.md
+└── Program.cs
+```
 
 
