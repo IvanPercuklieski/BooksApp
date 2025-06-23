@@ -13,7 +13,8 @@ Make sure you have the following installed on your machine:
 - dotnet run
 - Open in your browser https://localhost:10152/    # If this is not the correct port, the port should be shown in the window that pops out when you run
 
-## Project Strucure
+
+## Project Structure
 BooksApp/
 ├── BooksApp.Client/    # React Frontend
 │   ├── .vscode/
@@ -54,4 +55,5 @@ BooksApp/
     ├── BooksApp.Server.http
     ├── CHANGELOG.md
     └── Program.cs
+
 
