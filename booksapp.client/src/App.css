@@ -1,0 +1,121 @@
+﻿.book-app{
+    padding: 2rem;
+    padding-top: 0.5rem;
+}
+
+.book-app__header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.book-app__filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.book-app__search{
+    display: flex;
+    gap: 1rem
+}
+
+.book-app__sort{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.book-app__button {
+    border-radius: 2px;
+    border: 2px solid black;
+    padding: 2px 5px 2px 5px;
+    background-color: lightgray;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.book-app__search-input{
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+
+.book-app__sort-label{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.book-app__sort-select{
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.book-app__data{
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.book-app__table{
+    border-collapse: collapse;
+}
+
+.book-app__table thead tr th {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding-inline: 5px;
+    background-color: dimgray
+}
+
+.book-app__table tbody tr td{
+    border: 1px solid black;
+    padding: 2px 5px;
+    font-size: 1rem;
+}
+
+.book-app__table-row--striped{
+    background-color: lightgray;
+}
+
+.book-app__table-cell--hide-on-mobile{
+    text-align: center
+}
+
+@media(max-width: 800px) {
+    .book-app__filter{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .book-app{
+        padding: 1rem;
+    }
+
+    .book-app__header{
+        padding-bottom: 1rem;
+    }
+   
+}
+
+@media(max-width: 600px){
+    .book-app__search{
+        flex-direction: column;
+        gap: 0.5rem
+    }
+
+
+    .book-app__table-cell--hide-on-mobile,
+    .book-app__table-header--hide-on-mobile {
+        display: none;
+    }
+}
+
+.bold-red{
+    font-weight: 800;
+    color: red;
+}
+
+
